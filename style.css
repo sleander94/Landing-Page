@@ -4,6 +4,7 @@ body {
     color: #F9FAF8;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }   
 
 ul {
@@ -28,45 +29,48 @@ h1 {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    background-color: #1F2937;
-    color: #F9FAF8;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.body-one {
-    display: flex;
-    background-color: #1F2937;
-    color: #F9FAF8;
-    align-items: center;
     justify-content: space-around;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-    min-height: 300px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    gap: 16px;
+    padding-top: 24px;
+    margin-bottom: 72px;
 }
 
-.body-one p {
+.header p {
     color: #E5E7EB;
 }
 
-.left {
+.header-left {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    gap: 100px;
     justify-content: center;
-    min-width: 420px;
-    max-width: 600px;
-    padding: 0px;
-    margin: 0px;
+    min-width: 500px;
+    max-width: 500px;
+    margin-top: -60px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 1px;
 }
 
 .top-photo {
-    width: 400px;
+    width: 500px;
     height: auto;
 }
 
@@ -106,7 +110,7 @@ button {
     width: 125px
 }
 
-div.square {
+.square {
     border: solid 3px #3882F6;
     width: 125px;
     height: 125px;
@@ -122,17 +126,18 @@ div.square {
     padding-left: 250px;
     padding-right: 250px;
     justify-content: center;
-    align-items: flex-end;
+    
 }
 
 .body-three .quote-text  {
     font-size: 36px;
     font-weight: 100;
-    max-width: 600px;
-    min-width: 450px;
-    
+    min-width: 450px; 
 }
+
 .body-three .end-quote {
+    display: flex;
+    justify-content: flex-end;
     font-size: 28px;
     font-weight: 900;
     min-width: 150px;
@@ -145,11 +150,34 @@ div.square {
     justify-content: center;
     background-color: #3882F6;
     padding: 16px;
+    gap: 128px;
     padding-left: 100px;
     padding-right: 100px;
+    border-radius: 8px;
+    min-width: 550px;
 }
 
 .body-four {
     display: flex;
     background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-four h2 {
+    margin-bottom: -16px;
+}
+
+.body-four button {
+    border: solid 1px #F9FAF8;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
